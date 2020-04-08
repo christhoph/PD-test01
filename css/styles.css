@@ -3,3 +3,117 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: url("../assets/bg.jpg") no-repeat scroll center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.logo svg,
+.menu svg {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 10rem;
+  letter-spacing: 1.1rem;
+  z-index: 1;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+  transform-origin: right;
+  position: absolute;
+  left: -9rem;
+  bottom: 1.5rem;
+  color: #fff;
+  font-size: 0.6rem;
+  z-index: 1;
+}
+
+.line {
+  height: 1.5px;
+  width: 1rem;
+  background: #fff;
+  margin: 0 0.25rem;
+}
+
+.separator {
+  margin: 0 0.25rem;
+}
+
+.container {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 8rem;
+}
+
+.container-title {
+  align-self: flex-start;
+  margin: 2rem 0;
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.emphasis-title {
+  font-family: "Allura", cursive;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.container-description {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.description-line {
+  height: 2px;
+  width: 150px;
+  background: #ffc107;
+  margin: 0.75rem 1rem 0.75rem 0;
+}
+
+.container-description {
+  color: #bdbdbd;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
